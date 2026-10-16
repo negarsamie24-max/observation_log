@@ -28,8 +28,7 @@ def show_observation():
         return
     else:
         for i, obs in enumerate(observations):
-            print(f" Observation >>> {i + 1}
- Target: {obs.target}")
+            print(f" Observation >>> {i + 1}\n Target: {obs.target}")
             print(f" exposure: {obs.exposure}")
             print(f" observer : {obs.observer}")
             print(f" filter: {obs.filter}")
@@ -38,8 +37,7 @@ def search_observation():
     found = False
     for obs in observations:
         if user.lower() == obs.target.lower():
-            print("Observation found
-")
+            print("Observation found")
             print(f"Target: {obs.target}")
             print(f"Exposure: {obs.exposure}")
             print(f"Observer: {obs.observer}")
